@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Byte Agency</title>
+  </head>
+  <body class="flex flex-col items-center bg-[#353882]" id="home">
+
+    <nav class="w-full h-12 flex flex-row justify-start items-center fixed">
+
+      <h1 class="pl-10">ByteAgency</h1>
+      <span class="spanLinkDesktop m-auto pr-40 gap-10 flex">
+        <a href="#home">Inicio</a>
+        <a href="#products">Produtos</a>
+        <a href="#about">Sobre</a>
+        <!-- <a href="#contact">Contato</a> -->
+      </span>
+
+      <button id="btnModal">=</button>
+      <span class="spanLinkMobile">
+        <a href="#home">Inicio</a>
+        <a href="#products">Produtos</a>
+        <a href="#about">Sobre</a>
+        <!-- <a href="#contact">Contato</a> -->
+      </span>
+      
+    </nav>
+
+    <section class="main w-full">
+      
+      <div class="home w-full h-screen flex flex-col items-center justify-center text-center gap-10">
+        <h1>Conheca a Byte Agency</h1>
+
+        <h3>Agencia focada em site para jogos, o futuro é nosso.</h3>
+
+        <div class="linksHome flex flex-row gap-5">
+          <a href="#">Produtos</a>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="products w-full h-auto flex flex-col items-center gap-10 pb-10" id="products">
+
+        <div class="infoText w-1/2 text-center flex justify-center gap-10 mt-[5%] pb-10">
+          <h1 class="w-1/2 text-left">Vamos mostrar alguns produtos desenvolvidos por nós.</h1>
+          <p class="w-1/2 text-left">
+            Aqui deve ter uma curta descricao sobre como desenvolvemos alguns produtos, sobre o nosso processo.
+          </p>
+        </div>
+
+        <div class="infProducts w-full h-auto flex gap-30 flex-row flex-wrap">
+
+          <span class="spanGame w-[90%] m-auto flex flex-row justify-evenly p-2 ">
+            <span class=" w-1/2 flex flex-col justify-between">
+              <h1>Kingdom - New Lands</h1>
+              <p class="w-auto text-left">Kingdom: New Lands builds upon the award-winning gameplay and mystery of Kingdom by introducing an abundance 
+                of new content to the IGF-nominated title while maintaining the simplicity and depth that legions of monarchs have 
+                come to experience and enjoy. Travel to the New Lands and welcome the deluge of new mounts, merchants, and vagrants 
+                that call these isles home, but be wary of the new obstacles that threaten your arrival -- for not just the greedy 
+                creatures block your way but even the environment itself can defeat you.
+              </p>
+                <a href="" class="bg-pink-400 text-black p-1">Ver projeto</a>
+            </span>
+
+              <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001102/d667ad96489e59ab04fe1e492f82544dea09667ff5bee1ec7e10f43449087839" alt="">
+            </span>
+
+            <span class="spanGame w-[90%] m-auto flex flex-row justify-evenly p-2 ">
+              <img src="https://cdn2.unrealengine.com/egs-deadcells-motiontwin-s1-2560x1440-312502186.jpg" alt="">
+              <span class=" w-1/2 flex flex-col justify-between">
+                <h1>Dead Cells</h1>
+                <p class="w-auto text-left">
+                  Dead Cells is a 2018 roguelike-Metroidvania game developed by Motion Twin
+                   and Evil Empire, and published by Motion Twin. The player takes the role
+                    of an amorphous creature called the Prisoner. As the Prisoner, the player
+                     must fight their way out of a diseased island in order to slay the island's 
+                     King.
+                </p>
+                  <a href="" class="bg-blue-500 text-white p-1">Ver projeto</a>
+              </span>
+              </span>
+        </div>
+
+        
+        <span id="about"></span>
+        <br>
+      </div>
+
+      <div class="about w-full h-screen bg-white flex flex-col items-center justify-start">
+
+        <div class="infTextTop  w-[70%] mt-[5%]">
+          <h1>Um pouco sobre nos.</h1>
+          <p class="w-[80%]">
+            Nos trabalhamos com paixao e acreditamos que podemos elevar o nivel de qualidade para o seu produto.
+            Possuimos um time fantastico de designers e desenvolvedores, entao voce pode ter certeza que seu projeto esta em boas maos. 
+          </p>
+        </div>
+
+        <div class="inftTextBottom  w-[70%] mt-10">
+          <h1>Atendemos as seguintes plataformas.</h1>
+
+          <span class="flex flex-row w-[60%] justify-between mt-[50px]">
+            <img class="imgIcon w-[200px] h-[200px]" src="https://www.iconpacks.net/icons/2/free-mobile-phone-icon-2636-thumb.png" alt="">
+            <img class="imgIcon w-[200px] h-[200px]" src="https://pixsector.com/cache/31a8d9de/avced5bf1f84c39a9a9cf.png" alt="">
+            <img class="imgIcon w-[200px] h-[200px]" src="https://static-00.iconduck.com/assets.00/desktop-icon-2048x1708-figtizg1.png" alt="">
+           </span>
+
+        </div>
+
+      </div>
+
+      <!-- <div class="contact" id="contact">
+        <h1>Vamos colocar seu projeto online.</h1>
+
+        <div class="form">
+          <form action="">
+            <input type="text" id="" placeholder="Seu nome ou da sua empresa.">
+            <input type="text" id="" placeholder="Conte-nos um pouco sobre a sua ideia ou projeto.">
+            <input type="email" id="" placeholder="Seu email principal.">
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- <footer>Byte Agency</footer> -->
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
