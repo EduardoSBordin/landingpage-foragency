@@ -133,7 +133,7 @@ span a:hover{
   font-size: 1.2em;
 }
 .spanLinkDesktop{
-  display: block;
+  display: flex;
 }
 .spanLinkMobile{
   display: none;
@@ -183,7 +183,7 @@ nav button{
     justify-content: center;
     width: 100%;
     height: 400px;
-    margin-top: 100%;
+    margin-top: 120%;
     margin-left: 100%;
     padding-top: 20px;
     gap: 10px;
@@ -202,14 +202,37 @@ nav button{
   .spanGame p{
     display: none;
   }
+  .spanGame h1{
+    font-size: 22pt;
+    text-align: center;
+  }
+  .spanGame span{
+    background: rgba(0, 128, 0, 0);
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  .spanGame{
+    flex-direction: column;
+    background: rgba(255, 0, 0, 0);
+    align-items: center;
+  }
   .about h1{
-    font-size: 20pt;
+    font-size: 16pt;
   }
   .infTextTop h1{
     margin-top: 120px;
   }
-  .inftTextBottom img{
-    width: 50px;
-    height: 50px;
+  .spanGame img{
+    width: 100%;
+    margin-top: 20px;
   }
+  .infProducts{
+    gap: 20px;
+  }
+  .inftTextBottom img{
+    width: 30px;
+    height: 30px;
+  }
+  
 }
