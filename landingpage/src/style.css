@@ -154,17 +154,54 @@ span a:hover{
 }
 .about{
   border-radius: 0px 450px 0px 0px;
+  height:auto;
+  padding-bottom: 50px;
   box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 }
-.infTextTop h1, .inftTextBottom h1{
+.inftTextBottom h1{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 3em;
   color: #363983;
   font-weight: bold;
 }
+.infTextTop h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: #363983;
+  font-weight: bold;
+  background: rgba(0, 128, 0, 0);
+}
 .infTextTop p{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.2em;
+}
+.infTextTop{
+  background: rgba(255, 0, 0, 0);
+  width: 80%;
+  height: auto;
+  display:flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-right: 10%;
+  /* flex-direction: column; */
+  /* margin-right: 150px; */
+}
+.infTextTop img{
+  width: 60px;
+}
+.infTextTop span{
+  background: rgba(255, 255, 0, 0);
+  display: flex;
+  width: 500px;
+  /* height: auto; */
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+  margin: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .spanLinkDesktop{
   display: flex;
@@ -198,6 +235,9 @@ nav button{
   .infoText h1, .infoText p{
     width: 100%;
   }
+  .infTextTop{
+    margin-top: 200px;
+  }
   nav button{
     display: block;
   }
@@ -210,18 +250,18 @@ nav button{
     display: none;
   }
   .spanLinkMobile{
-    background: black;
+    background: rgba(0, 20, 94, 0.981);
     display: flex;
     flex-direction: column;
     position: absolute;
     justify-content: center;
     width: 100%;
     height: 400px;
-    margin-top: 120%;
+    margin-top: 450px;
     margin-left: 100%;
     padding-top: 20px;
     gap: 10px;
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out .3s;
   }
   .spanLinkMobile.openModal{
     margin-left: 0%;
@@ -250,13 +290,15 @@ nav button{
     flex-direction: column;
     /* background: rgba(255, 0, 0, 0); */
     align-items: center;
+    /* background: red; */
+    width: 80%;
   }
   .about h1{
     font-size: 16pt;
   }
-  .infTextTop h1{
+  /* .infTextTop h1{
     margin-top: 120px;
-  }
+  } */
   /* .spanGame img{
     width: 100%;
     margin-top: 20px;
@@ -268,5 +310,8 @@ nav button{
     width: 30px;
     height: 30px;
   }
-  
+  .about{
+    /* background: red; */
+    padding-bottom: 50px;
+  }
 }
